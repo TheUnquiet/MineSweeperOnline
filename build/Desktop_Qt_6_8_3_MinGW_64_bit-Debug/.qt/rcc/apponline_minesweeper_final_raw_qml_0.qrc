@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/qt/qml/online_minesweeper_final/">
+    <file alias="Main.qml">C:/All-1/Apps/qml/online_minesweeper_final/Main.qml</file>
+    <file alias="Cell.qml">C:/All-1/Apps/qml/online_minesweeper_final/Cell.qml</file>
+    <file alias="CellLogic.js">C:/All-1/Apps/qml/online_minesweeper_final/CellLogic.js</file>
+    <file alias="BoardLogic.js">C:/All-1/Apps/qml/online_minesweeper_final/BoardLogic.js</file>
+    <file alias="Board.qml">C:/All-1/Apps/qml/online_minesweeper_final/Board.qml</file>
+  </qresource>
+</RCC>
+

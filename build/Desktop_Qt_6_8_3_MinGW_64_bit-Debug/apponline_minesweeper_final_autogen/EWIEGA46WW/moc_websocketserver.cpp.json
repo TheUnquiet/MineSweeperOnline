@@ -1,0 +1,58 @@
+{
+    "classes": [
+        {
+            "className": "WebSocketServer",
+            "lineNumber": 8,
+            "object": true,
+            "qualifiedClassName": "WebSocketServer",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "serverStarted",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 1,
+                    "name": "onNewConnection",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "onMessageRecieved",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 3,
+                    "name": "onClientDisconnect",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 4,
+                    "name": "broadcastClientCount",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "websocketserver.h",
+    "outputRevision": 68
+}

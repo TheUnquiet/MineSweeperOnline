@@ -1,0 +1,9 @@
+module online_minesweeper_final
+typeinfo apponline_minesweeper_final.qmltypes
+prefer :/qt/qml/online_minesweeper_final/
+Main 1.0 Main.qml
+Cell 1.0 Cell.qml
+CellLogic 1.0 CellLogic.js
+BoardLogic 1.0 BoardLogic.js
+Board 1.0 Board.qml
+

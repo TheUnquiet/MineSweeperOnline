@@ -1,0 +1,14 @@
+-rootPath
+C:/All-1/Apps/qml/online_minesweeper_final
+-cmake-output
+-output-file
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/qml_imports/apponline_minesweeper_final_build.cmake
+-importPath
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final
+-importPath
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.8.3/mingw_64/qml
+-qrcFiles
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/qmake_online_minesweeper_final.qrc
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/apponline_minesweeper_final_raw_qml_0.qrc

@@ -1,0 +1,16 @@
+--bare
+-I
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug
+-I
+C:/Qt/6.8.3/mingw_64/qml
+--resource
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/qmake_online_minesweeper_final.qrc
+--resource
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/apponline_minesweeper_final_raw_qml_0.qrc
+C:/All-1/Apps/qml/online_minesweeper_final/Main.qml
+C:/All-1/Apps/qml/online_minesweeper_final/Cell.qml
+C:/All-1/Apps/qml/online_minesweeper_final/CellLogic.js
+C:/All-1/Apps/qml/online_minesweeper_final/BoardLogic.js
+C:/All-1/Apps/qml/online_minesweeper_final/Board.qml
+--json
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_qmllint.json

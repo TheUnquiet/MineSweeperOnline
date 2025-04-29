@@ -1,0 +1,9 @@
+--resource
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/qmake_online_minesweeper_final.qrc
+--resource
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/apponline_minesweeper_final_raw_qml_0.qrc
+/qt/qml/online_minesweeper_final/Main.qml
+/qt/qml/online_minesweeper_final/Cell.qml
+/qt/qml/online_minesweeper_final/CellLogic.js
+/qt/qml/online_minesweeper_final/BoardLogic.js
+/qt/qml/online_minesweeper_final/Board.qml

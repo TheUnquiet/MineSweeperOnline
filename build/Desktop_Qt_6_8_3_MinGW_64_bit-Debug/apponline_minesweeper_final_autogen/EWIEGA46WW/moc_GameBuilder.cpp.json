@@ -1,0 +1,26 @@
+{
+    "classes": [
+        {
+            "className": "GameBuilder",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "GameBuilder",
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 0,
+                    "name": "generateBombs",
+                    "returnType": "QList<std::pair<int,int>>"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "GameBuilder.h",
+    "outputRevision": 68
+}
