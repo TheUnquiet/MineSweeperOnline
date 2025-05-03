@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 303,
+                        "durationMicroseconds": 333,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "grid",
                         "line": 9
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 18,
-                        "durationMicroseconds": 135,
+                        "durationMicroseconds": 205,
                         "errorMessage": "",
                         "functionName": "implicitWidth",
                         "line": 13
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 82,
+                        "durationMicroseconds": 115,
                         "errorMessage": "",
                         "functionName": "implicitHeight",
                         "line": 14
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 11,
-                        "durationMicroseconds": 82,
+                        "durationMicroseconds": 122,
                         "errorMessage": "",
                         "functionName": "rows",
                         "line": 23
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 14,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 122,
                         "errorMessage": "",
                         "functionName": "columns",
                         "line": 24
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 14,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 281,
                         "errorMessage": "",
                         "functionName": "model",
                         "line": 29
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 14,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 55,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "row",
                         "line": 31
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 14,
-                        "durationMicroseconds": 15,
+                        "durationMicroseconds": 18,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "col",
                         "line": 32
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 68,
+                        "durationMicroseconds": 84,
                         "errorMessage": "Cannot access value for name board",
                         "functionName": "onClicked",
                         "line": 34
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 208,
+                        "durationMicroseconds": 257,
                         "errorMessage": "Cannot generate efficient code for LoadClosure",
                         "functionName": "onCompleted",
                         "line": 42

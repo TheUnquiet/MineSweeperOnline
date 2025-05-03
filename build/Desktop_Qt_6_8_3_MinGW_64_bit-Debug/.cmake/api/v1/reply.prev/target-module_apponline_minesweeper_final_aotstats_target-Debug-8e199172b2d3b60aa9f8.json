@@ -5,7 +5,8 @@
 		"commands" : 
 		[
 			"add_custom_target",
-			"_qt_internal_deferred_aotstats_setup"
+			"_qt_internal_deferred_aotstats_setup",
+			"add_dependencies"
 		],
 		"files" : 
 		[
@@ -32,7 +33,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 1212,
+				"line" : 1151,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1156,
 				"parent" : 2
 			}
 		]
@@ -40,11 +47,16 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "module_apponline_minesweeper_final_aotstats_target::@6890427a1f51a3e7e1df"
+			"backtrace" : 4,
+			"id" : "apponline_minesweeper_final_qmltyperegistration::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "all_aotstats::@6890427a1f51a3e7e1df",
-	"name" : "all_aotstats",
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "module_apponline_minesweeper_final_aotstats_target::@6890427a1f51a3e7e1df",
+	"name" : "module_apponline_minesweeper_final_aotstats_target",
 	"paths" : 
 	{
 		"build" : ".",
@@ -69,7 +81,9 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -78,19 +92,13 @@
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/all_aotstats",
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/module_apponline_minesweeper_final_aotstats_target",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/all_aotstats.rule",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/all_aotstats.aotstats.rule",
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/CMakeFiles/module_apponline_minesweeper_final_aotstats_target.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -114,7 +122,25 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_JoinSessionPage_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_LandingPage_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_Main_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_StartSessionPage_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{

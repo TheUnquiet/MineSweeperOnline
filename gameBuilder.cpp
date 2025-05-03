@@ -1,5 +1,6 @@
 #include "gameBuilder.h"
 #include <QRandomGenerator>
+#include <QDebug>
 
 GameBuilder::GameBuilder(int rows, int cols, int bombs)
     : m_rows(rows), m_cols(cols), m_bombs(bombs) {}
@@ -17,12 +18,15 @@ QVector<QPair<int, int>> GameBuilder::generateBombs() {
                 exists = true;
                 break;
             }
+
+            qDebug() << "bomb at: x: " << bomb.first << " y: " << bomb.second;
         }
 
         if (!exists) {
             bombPositions.append(qMakePair(x, y));
         }
     }
+
     return bombPositions;
 }
 

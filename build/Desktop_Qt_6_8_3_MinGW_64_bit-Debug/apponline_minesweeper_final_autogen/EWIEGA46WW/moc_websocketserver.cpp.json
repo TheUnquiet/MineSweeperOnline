@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "WebSocketServer",
-            "lineNumber": 8,
+            "lineNumber": 21,
             "object": true,
             "qualifiedClassName": "WebSocketServer",
             "signals": [
@@ -43,6 +43,38 @@
                     "index": 4,
                     "name": "broadcastClientCount",
                     "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "rows",
+                            "type": "int"
+                        },
+                        {
+                            "name": "cols",
+                            "type": "int"
+                        },
+                        {
+                            "name": "bombs",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "startNewGame",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "session",
+                            "type": "GameSession"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "startGameForSession",
+                    "returnType": "void"
                 }
             ],
             "superClasses": [
@@ -53,6 +85,6 @@
             ]
         }
     ],
-    "inputFile": "websocketserver.h",
+    "inputFile": "webSocketServer.h",
     "outputRevision": 68
 }

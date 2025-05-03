@@ -1,4 +1,4 @@
-C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/EWIEGA46WW/moc_GameBuilder.cpp: C:/All-1/Apps/qml/online_minesweeper_final/GameBuilder.h \
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/EWIEGA46WW/moc_gameBuilder.cpp: C:/All-1/Apps/qml/online_minesweeper_final/gameBuilder.h \
   C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/moc_predefs.h \
   C:/Qt/6.8.3/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.3/mingw_64/include/QtCore/q20functional.h \

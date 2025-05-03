@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'websocketserver.h'
+** Meta object code from reading C++ file 'webSocketServer.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.8.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../websocketserver.h"
+#include "../../../../webSocketServer.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -16,7 +16,7 @@
 
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'websocketserver.h' doesn't include <QObject>."
+#error "The header file 'webSocketServer.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.8.3. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -44,7 +44,14 @@ static constexpr auto qt_meta_stringdata_ZN15WebSocketServerE = QtMocHelpers::st
     "onMessageRecieved",
     "message",
     "onClientDisconnect",
-    "broadcastClientCount"
+    "broadcastClientCount",
+    "startNewGame",
+    "rows",
+    "cols",
+    "bombs",
+    "startGameForSession",
+    "GameSession",
+    "session"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -56,7 +63,7 @@ Q_CONSTINIT static const uint qt_meta_data_ZN15WebSocketServerE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -64,13 +71,15 @@ Q_CONSTINIT static const uint qt_meta_data_ZN15WebSocketServerE[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   44,    2, 0x06,    1 /* Public */,
+       1,    0,   56,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    0,   45,    2, 0x08,    2 /* Private */,
-       4,    1,   46,    2, 0x08,    3 /* Private */,
-       6,    0,   49,    2, 0x08,    5 /* Private */,
-       7,    0,   50,    2, 0x08,    6 /* Private */,
+       3,    0,   57,    2, 0x08,    2 /* Private */,
+       4,    1,   58,    2, 0x08,    3 /* Private */,
+       6,    0,   61,    2, 0x08,    5 /* Private */,
+       7,    0,   62,    2, 0x08,    6 /* Private */,
+       8,    3,   63,    2, 0x08,    7 /* Private */,
+      12,    1,   70,    2, 0x08,   11 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -80,6 +89,8 @@ Q_CONSTINIT static const uint qt_meta_data_ZN15WebSocketServerE[] = {
     QMetaType::Void, QMetaType::QString,    5,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int,    9,   10,   11,
+    QMetaType::Void, 0x80000000 | 13,   14,
 
        0        // eod
 };
@@ -103,7 +114,15 @@ Q_CONSTINIT const QMetaObject WebSocketServer::staticMetaObject = { {
         // method 'onClientDisconnect'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'broadcastClientCount'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'startNewGame'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'startGameForSession'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const GameSession &, std::false_type>
     >,
     nullptr
 } };
@@ -118,6 +137,8 @@ void WebSocketServer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 2: _t->onMessageRecieved((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 3: _t->onClientDisconnect(); break;
         case 4: _t->broadcastClientCount(); break;
+        case 5: _t->startNewGame((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
+        case 6: _t->startGameForSession((*reinterpret_cast< std::add_pointer_t<GameSession>>(_a[1]))); break;
         default: ;
         }
     }
@@ -152,14 +173,14 @@ int WebSocketServer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 7;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 7;
     }
     return _id;
 }

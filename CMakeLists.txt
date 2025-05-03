@@ -25,6 +25,10 @@ qt_add_qml_module(apponline_minesweeper_final
         QML_FILES Board.qml
         SOURCES gameBuilder.h
         SOURCES gameBuilder.cpp
+        QML_FILES LandingPage.qml
+        QML_FILES StartSessionPage.qml
+        QML_FILES JoinSessionPage.qml
+        QML_FILES BoardPage.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

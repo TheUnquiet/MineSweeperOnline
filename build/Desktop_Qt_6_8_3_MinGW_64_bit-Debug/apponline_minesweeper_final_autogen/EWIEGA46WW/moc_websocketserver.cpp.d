@@ -1,4 +1,4 @@
-C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/EWIEGA46WW/moc_websocketserver.cpp: C:/All-1/Apps/qml/online_minesweeper_final/websocketserver.h \
+C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/EWIEGA46WW/moc_webSocketServer.cpp: C:/All-1/Apps/qml/online_minesweeper_final/webSocketServer.h \
   C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/moc_predefs.h \
   C:/Qt/6.8.3/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.8.3/mingw_64/include/QtCore/QObject \

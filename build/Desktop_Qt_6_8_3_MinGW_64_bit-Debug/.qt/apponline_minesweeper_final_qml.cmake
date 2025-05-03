@@ -12,6 +12,14 @@ set(src_and_dest_list
     "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/BoardLogic.js"
     "C:/All-1/Apps/qml/online_minesweeper_final/Board.qml"
     "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/Board.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/LandingPage.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/LandingPage.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/StartSessionPage.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/StartSessionPage.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/JoinSessionPage.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/JoinSessionPage.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/BoardPage.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/BoardPage.qml"
 
 )
 set(timestamp_file "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/apponline_minesweeper_final_qml.txt")

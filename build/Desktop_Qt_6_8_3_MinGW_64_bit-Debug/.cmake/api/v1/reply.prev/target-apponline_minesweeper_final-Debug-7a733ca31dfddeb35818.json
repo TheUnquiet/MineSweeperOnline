@@ -27,13 +27,13 @@
 			"qt6_add_qml_module",
 			"qt_add_qml_module",
 			"add_dependencies",
+			"_qt_internal_qml_copy_files_to_build_dir",
+			"qt6_target_qml_sources",
 			"_qt_internal_scan_qml_imports",
 			"_qt_internal_generate_deploy_qml_imports_script",
 			"cmake_language",
 			"_qt_internal_finalize_executable",
 			"qt6_finalize_target",
-			"_qt_internal_qml_copy_files_to_build_dir",
-			"qt6_target_qml_sources",
 			"target_include_directories",
 			"_qt_internal_qml_type_registration",
 			"target_sources",
@@ -104,13 +104,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 47,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 41,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -414,74 +414,74 @@
 				"parent" : 61
 			},
 			{
-				"file" : 1,
-				"line" : -1,
-				"parent" : 0
-			},
-			{
-				"command" : 18,
-				"file" : 23,
-				"line" : 1,
-				"parent" : 63
-			},
-			{
-				"command" : 17,
-				"file" : 0,
-				"line" : 823,
-				"parent" : 64
-			},
-			{
-				"command" : 16,
-				"file" : 0,
-				"line" : 745,
-				"parent" : 65
-			},
-			{
 				"command" : 15,
-				"file" : 0,
-				"line" : 745,
-				"parent" : 66
-			},
-			{
-				"command" : 14,
-				"file" : 10,
-				"line" : 4361,
-				"parent" : 67
-			},
-			{
-				"command" : 13,
-				"file" : 10,
-				"line" : 4136,
-				"parent" : 68
-			},
-			{
-				"command" : 20,
 				"file" : 10,
 				"line" : 916,
 				"parent" : 24
 			},
 			{
-				"command" : 19,
+				"command" : 14,
 				"file" : 10,
 				"line" : 3488,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 13,
 				"file" : 10,
 				"line" : 2887,
+				"parent" : 64
+			},
+			{
+				"command" : 14,
+				"file" : 10,
+				"line" : 3482,
+				"parent" : 63
+			},
+			{
+				"command" : 13,
+				"file" : 10,
+				"line" : 2887,
+				"parent" : 66
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 20,
+				"file" : 23,
+				"line" : 1,
+				"parent" : 68
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 823,
+				"parent" : 69
+			},
+			{
+				"command" : 18,
+				"file" : 0,
+				"line" : 745,
+				"parent" : 70
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 745,
 				"parent" : 71
 			},
 			{
-				"command" : 19,
+				"command" : 16,
 				"file" : 10,
-				"line" : 3482,
-				"parent" : 70
+				"line" : 4361,
+				"parent" : 72
 			},
 			{
 				"command" : 13,
 				"file" : 10,
-				"line" : 2887,
+				"line" : 4136,
 				"parent" : 73
 			},
 			{
@@ -560,13 +560,13 @@
 				"command" : 23,
 				"file" : 10,
 				"line" : 3209,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 29,
 				"file" : 10,
 				"line" : 3346,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
@@ -578,91 +578,127 @@
 				"command" : 23,
 				"file" : 10,
 				"line" : 3402,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
 				"file" : 10,
 				"line" : 3209,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
 				"file" : 10,
 				"line" : 3402,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
 				"file" : 10,
 				"line" : 3209,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
 				"file" : 10,
 				"line" : 3402,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
 				"file" : 10,
 				"line" : 3209,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
 				"file" : 10,
 				"line" : 3402,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
 				"file" : 10,
 				"line" : 3209,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 23,
 				"file" : 10,
 				"line" : 3402,
-				"parent" : 70
+				"parent" : 63
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3209,
+				"parent" : 63
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3402,
+				"parent" : 63
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3209,
+				"parent" : 63
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3402,
+				"parent" : 63
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3209,
+				"parent" : 63
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3402,
+				"parent" : 63
 			},
 			{
 				"command" : 28,
 				"file" : 10,
 				"line" : 3504,
-				"parent" : 70
+				"parent" : 63
 			},
 			{
 				"command" : 27,
 				"file" : 0,
 				"line" : 406,
-				"parent" : 99
+				"parent" : 105
 			},
 			{
 				"command" : 26,
 				"file" : 0,
 				"line" : 2547,
-				"parent" : 100
+				"parent" : 106
 			},
 			{
 				"command" : 23,
 				"file" : 0,
 				"line" : 2089,
-				"parent" : 101
+				"parent" : 107
 			},
 			{
 				"command" : 30,
 				"file" : 0,
 				"line" : 817,
-				"parent" : 64
+				"parent" : 69
 			},
 			{
 				"command" : 23,
 				"file" : 0,
 				"line" : 2212,
-				"parent" : 103
+				"parent" : 109
 			}
 		]
 	},
@@ -864,7 +900,10 @@
 				15,
 				17,
 				19,
-				20
+				21,
+				23,
+				25,
+				26
 			]
 		},
 		{
@@ -1063,16 +1102,16 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 69,
-			"id" : "apponline_minesweeper_final_qmlimportscan::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 72,
+			"backtrace" : 65,
 			"id" : "apponline_minesweeper_final_copy_res::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 74,
+			"backtrace" : 67,
 			"id" : "apponline_minesweeper_final_copy_qml::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 74,
+			"id" : "apponline_minesweeper_final_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
@@ -1235,17 +1274,17 @@
 			"sourceIndexes" : 
 			[
 				0,
-				24,
-				37,
-				38,
-				39,
-				40,
-				41,
-				42,
-				43,
-				44,
-				45,
-				46
+				30,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55
 			]
 		},
 		{
@@ -1263,7 +1302,10 @@
 				15,
 				17,
 				19,
-				20
+				21,
+				23,
+				25,
+				26
 			]
 		},
 		{
@@ -1276,7 +1318,10 @@
 				14,
 				16,
 				18,
-				22
+				20,
+				22,
+				24,
+				28
 			]
 		},
 		{
@@ -1291,26 +1336,29 @@
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				21,
-				23
+				27,
+				29
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				25,
-				26,
-				27,
-				28,
-				29,
-				30,
 				31,
 				32,
 				33,
 				34,
 				35,
-				36
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45
 			]
 		}
 	],
@@ -1362,7 +1410,7 @@
 		},
 		{
 			"backtrace" : 86,
-			"path" : "GameBuilder.h",
+			"path" : "gameBuilder.h",
 			"sourceGroupIndex" : 3
 		},
 		{
@@ -1439,26 +1487,62 @@
 			"sourceGroupIndex" : 1
 		},
 		{
+			"backtrace" : 99,
+			"path" : "LandingPage.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 100,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_LandingPage_qml.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 101,
+			"path" : "StartSessionPage.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 102,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_StartSessionPage_qml.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 103,
+			"path" : "JoinSessionPage.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 104,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_JoinSessionPage_qml.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 108,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/qrc_apponline_minesweeper_final_raw_qml_0.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 104,
+			"backtrace" : 110,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/qmake_online_minesweeper_final.qrc",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 104,
+			"backtrace" : 110,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/qmldir",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 104,
+			"backtrace" : 110,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/rcc/apponline_minesweeper_final_raw_qml_0.qrc",
 			"sourceGroupIndex" : 4
@@ -1521,6 +1605,24 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_Board_qml.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_LandingPage_qml.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_StartSessionPage_qml.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.rcc/qmlcache/apponline_minesweeper_final_JoinSessionPage_qml.cpp.rule",
 			"sourceGroupIndex" : 5
 		},
 		{

@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 1044,
+                        "durationMicroseconds": 1153,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 22
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 80,
+                        "durationMicroseconds": 99,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 21
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 264,
+                        "durationMicroseconds": 389,
                         "errorMessage": "",
                         "functionName": "acceptedButtons",
                         "line": 28
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 18,
-                        "durationMicroseconds": 506,
+                        "durationMicroseconds": 1534,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "onClicked",
                         "line": 30
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 18,
-                        "durationMicroseconds": 54,
+                        "durationMicroseconds": 442,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 30
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 59,
+                        "durationMicroseconds": 202,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 27
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 447,
+                        "durationMicroseconds": 600,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 37
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 13,
-                        "durationMicroseconds": 105,
+                        "durationMicroseconds": 214,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 38
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 57,
+                        "durationMicroseconds": 101,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 36
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 234,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 46
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 55,
+                        "durationMicroseconds": 82,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 44
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 140,
+                        "durationMicroseconds": 340,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 54
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 119,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 52

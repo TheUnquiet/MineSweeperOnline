@@ -1,77 +1,82 @@
 import QtQuick
 import QtQuick.Controls
 import QtWebSockets
-import "BoardLogic.js" as BoardLogic
 
 ApplicationWindow {
-  id: window
+  visible: true
   width: 600
   height: 600
-  title: "Minesweeper Online Final"
-  visible: true
+  title: "Minesweeper Final"
 
-  property int rows: 10
-  property int cols: 10
-  property int bombs: 15
-  property int connectedClients
+  property var sessions: []
+  property int connectedClients: 0
 
   WebSocket {
-    id: socket
+    id: webSocket
     url: "ws://127.0.0.1:1234"
     active: true
+
     onTextMessageReceived: function (message) {
       console.log("Received: " + message)
       var data = JSON.parse(message)
+
       if (data.type === "clientCount") {
         connectedClients = data.count
+      } else if (data.type === "sessionList") {
+        sessions = data.sessions
+      } else if (data.type === "sessionJoined" || data.type === "newGame") {
+        if (data.type === "newGame") {
+          boardPageRef.rows = data.rows
+          boardPageRef.cols = data.cols
+          boardPageRef.bombs = data.bombs.length
+          Qt.callLater(() => {
+                         BoardLogic.initGameFromServer(boardPageRef, data.rows,
+                                                       data.cols, data.bombs,
+                                                       boardPageRef.grid,
+                                                       boardPageRef.repeater)
+                       })
+        }
+        stackView.push(boardPageComponent)
       }
-    }
-
-    onStatusChanged: {
-      if (socket.status === WebSocket.Open) {
-        console.log("WebSocket connected")
-        socket.sendTextMessage("Hello from QML client!")
-      } else if (socket.status === WebSocket.Closed) {
-        console.log("WebSocket connection closed")
-      } else if (socket.status === WebSocket.Connecting) {
-        console.log("WebSocket connecting...")
-      } else {
-        console.log("WebSocket error")
-      }
-
-      console.log(socket.status)
     }
   }
 
-  Rectangle {
-    anchors.centerIn: parent
-    implicitHeight: button.implicitHeight + board.implicitHeight
-    implicitWidth: Math.max(button.implicitWidth, board.implicitWidth)
-
-    x: 150
-    y: 100
-
-    Button {
-      id: button
-      anchors.top: parent.top
-      anchors.left: parent.left
-      text: "Restart"
-      onClicked: BoardLogic.initGame()
-    }
-
-    Board {
-      id: board
-      anchors.top: button.bottom
-      anchors.left: parent.left
-      rows: window.rows
-      cols: window.cols
-      bombs: window.bombs
+  StackView {
+    id: stackView
+    anchors.fill: parent
+    initialItem: LandingPage {
+      socket: webSocket
+      onStartGame: stackView.push(startPageComponent)
+      onJoinGame: {
+        webSocket.sendTextMessage(JSON.stringify({
+                                                   "type": "getSessions"
+                                                 }))
+        stackView.push(joinPageComponent)
+      }
     }
   }
 
-  Text {
-    id: clientsText
-    text: "Player count: " + connectedClients
-    font.pixelSize: 24
+  Component {
+    id: startPageComponent
+    StartSessionPage {
+      socket: webSocket
+      onBack: stackView.pop()
+    }
+  }
+
+  Component {
+    id: joinPageComponent
+    JoinSessionPage {
+      socket: webSocket
+      sessionList: sessions
+      onBack: stackView.pop()
+    }
+  }
+
+  Component {
+    id: boardPageComponent
+    BoardPage {
+      id: boardPageRef
+    }
   }
 }

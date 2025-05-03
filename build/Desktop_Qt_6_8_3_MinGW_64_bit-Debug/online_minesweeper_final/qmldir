@@ -6,4 +6,8 @@ Cell 1.0 Cell.qml
 CellLogic 1.0 CellLogic.js
 BoardLogic 1.0 BoardLogic.js
 Board 1.0 Board.qml
+LandingPage 1.0 LandingPage.qml
+StartSessionPage 1.0 StartSessionPage.qml
+JoinSessionPage 1.0 JoinSessionPage.qml
+BoardPage 1.0 BoardPage.qml
 

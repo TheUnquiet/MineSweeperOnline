@@ -1,0 +1,36 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 361,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 9
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 49
+                    }
+                ],
+                "filepath": "C:/All-1/Apps/qml/online_minesweeper_final/StartSessionPage.qml"
+            }
+        ],
+        "moduleId": "online_minesweeper_final(apponline_minesweeper_final)"
+    }
+]

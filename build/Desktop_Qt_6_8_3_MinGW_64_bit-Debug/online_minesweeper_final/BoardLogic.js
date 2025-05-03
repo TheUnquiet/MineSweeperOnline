@@ -93,3 +93,40 @@ function revealAll(grid, rows, cols) {
     }
   }
 }
+
+function initGameFromServer(board, rows, cols, bombList, grid, repeater) {
+  for (var r = 0; r < rows; r++) {
+    grid[r] = []
+    for (var c = 0; c < cols; c++) {
+      let cell = repeater.itemAt(r * cols + c)
+      cell.isBomb = false
+      cell.isFlagged = false
+      cell.isRevealed = false
+      cell.neighborBombs = 0
+      grid[r][c] = cell
+    }
+  }
+
+  for (var i = 0; i < bombList.length; i++) {
+    let x = bombList[i].x
+    let y = bombList[i].y
+    grid[y][x].isBomb = true
+  }
+
+  for (var r = 0; r < rows; r++) {
+    for (var c = 0; c < cols; c++) {
+      let count = 0
+      for (var dr = -1; dr <= 1; dr++) {
+        for (var dc = -1; dc <= 1; dc++) {
+          if (dr === 0 && dc === 0)
+            continue
+          let nr = r + dr, nc = c + dc
+          if (nr >= 0 && nr < rows && nc >= 0 && nc < cols
+              && grid[nr][nc].isBomb)
+            count++
+        }
+      }
+      grid[r][c].neighborBombs = count
+    }
+  }
+}

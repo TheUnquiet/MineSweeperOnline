@@ -9,8 +9,6 @@ class GameBuilder : public QObject  {
 public:
     explicit GameBuilder(int rows, int cols, int bombs);
     ~GameBuilder();
-
-private slots:
     QVector<QPair<int, int>> generateBombs();
 
 private:
