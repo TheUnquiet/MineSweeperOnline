@@ -159,7 +159,7 @@ void WebSocketServer::startGameForSession(const GameSession &session) {
     QVector<QPair<int, int>> bombsArray = builder.generateBombs();
 
     QJsonArray bombArray;
-    for (const QPair<int, int> &pos : bombsArray) {
+    for (const QPair<int, int> &pos : std::as_const(bombsArray)) {
         QJsonObject bombObj;
         bombObj["x"] = pos.first;
         bombObj["y"] = pos.second;
