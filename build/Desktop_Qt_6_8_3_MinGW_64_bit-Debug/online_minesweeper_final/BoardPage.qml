@@ -7,29 +7,36 @@ Item {
     width: parent ? parent.width : 600
     height: parent ? parent.height : 600
 
-    property int rows: 10
-    property int cols: 10
-    property int bombs: 15
+    property int rows: 0
+    property int cols: 0
+    property int bombs: 0
     property var grid: []
-    property alias repeater: repeater
+    property bool ready: false
+    property var bombList: []
 
-    Column {
+    Loader {
+        id: boardLoader
         anchors.fill: parent
-        spacing: 10
-        padding: 20
+        active: ready
+        sourceComponent: boardComponent
+    }
 
-        Button {
-            text: "Restart"
-            onClicked: BoardLogic.initGame()
-        }
-
+    Component {
+        id: boardComponent
         Board {
             id: board
             rows: boardPage.rows
             cols: boardPage.cols
             bombs: boardPage.bombs
-        }
+            grid: boardPage.grid
 
-        Repeater { id: repeater }
+            Component.onCompleted: {
+                Qt.callLater(() => {
+                                 BoardLogic.initGameFromServer(
+                                     board, rows, cols, boardPage.bombList,
+                                     boardPage.grid, board.repeater)
+                             })
+            }
+        }
     }
 }

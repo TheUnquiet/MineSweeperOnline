@@ -31,12 +31,6 @@ void WebSocketServer::onNewConnection() {
 void WebSocketServer::onMessageRecieved(const QString &message) {
     qDebug() << "Recieved Message:" << message;
 
-    for (QWebSocket *client : std::as_const(clients)) {
-        if (client->isValid()) {
-            client->sendTextMessage(message);
-        }
-    }
-
     QJsonDocument doc = QJsonDocument::fromJson(message.toUtf8());
     QJsonObject obj = doc.object();
 
@@ -49,7 +43,6 @@ void WebSocketServer::onMessageRecieved(const QString &message) {
         session.cols = obj["cols"].toInt();
         session.bombs = obj["bombs"].toInt();
         session.maxPlayers = obj["players"].toInt();
-        session.players.append(qobject_cast<QWebSocket*>(sender()));
         sessions.append(session);
 
         QJsonObject response;
@@ -59,6 +52,7 @@ void WebSocketServer::onMessageRecieved(const QString &message) {
         QJsonDocument responseDoc(response);
         qobject_cast<QWebSocket*>(sender())->sendTextMessage(responseDoc.toJson());
 
+        session.players.append(qobject_cast<QWebSocket*>(sender()));
     } else if (type == "getSessions") {
         QJsonArray sessionList;
 
@@ -90,22 +84,27 @@ void WebSocketServer::onMessageRecieved(const QString &message) {
             if (session.id == sessionId && !session.isFull()) {
                 session.players.append(client);
 
-                // Notify client they joined successfully
-                QJsonObject joinedMsg;
-                joinedMsg["type"] = "sessionJoined";
-                joinedMsg["sessionId"] = session.id;
-                QJsonDocument joinedDoc(joinedMsg);
-                client->sendTextMessage(joinedDoc.toJson());
-
-                // If full, start the game
                 if (session.isFull()) {
                     startGameForSession(session);
+                } else {
+                    // Notify client that they joined, but game hasn't started yet
+                    QJsonObject joinedMsg;
+                    joinedMsg["type"] = "sessionJoined";
+                    joinedMsg["sessionId"] = session.id;
+
+                    // Optional: include session info if needed on client side
+                    joinedMsg["rows"] = session.rows;
+                    joinedMsg["cols"] = session.cols;
+                    joinedMsg["bombs"] = session.bombs;
+
+                    QJsonDocument joinedDoc(joinedMsg);
+                    client->sendTextMessage(joinedDoc.toJson());
                 }
+
                 break;
             }
         }
     }
-
 }
 
 void WebSocketServer::onClientDisconnect() {

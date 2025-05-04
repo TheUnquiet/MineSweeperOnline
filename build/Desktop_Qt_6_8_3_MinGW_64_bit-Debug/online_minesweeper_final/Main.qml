@@ -24,19 +24,25 @@ ApplicationWindow {
         connectedClients = data.count
       } else if (data.type === "sessionList") {
         sessions = data.sessions
-      } else if (data.type === "sessionJoined" || data.type === "newGame") {
+      } else if (data.type === "newGame" || (data.type === "sessionJoined"
+                                             && data.bombs !== undefined)) {
+        var boardPageInstance = boardPageComponent.createObject(stackView)
+        boardPageInstance.rows = data.rows
+        boardPageInstance.cols = data.cols
+        boardPageInstance.bombs = data.bombs.length
+            || data.bombs // handle both array and int
+        boardPageInstance.bombList = data.bombs
+        boardPageInstance.ready = true
+        stackView.push(boardPageInstance)
+
         if (data.type === "newGame") {
-          boardPageRef.rows = data.rows
-          boardPageRef.cols = data.cols
-          boardPageRef.bombs = data.bombs.length
-          Qt.callLater(() => {
-                         BoardLogic.initGameFromServer(boardPageRef, data.rows,
-                                                       data.cols, data.bombs,
-                                                       boardPageRef.grid,
-                                                       boardPageRef.repeater)
-                       })
+          console.log("New game started")
+        } else {
+          console.log("Joined session after game started")
         }
-        stackView.push(boardPageComponent)
+      } else if (data.type === "sessionJoined") {
+        console.log("Joined session, waiting for more players...")
+        // Optionally show waiting UI
       }
     }
   }
@@ -75,8 +81,6 @@ ApplicationWindow {
 
   Component {
     id: boardPageComponent
-    BoardPage {
-      id: boardPageRef
-    }
+    BoardPage {}
   }
 }

@@ -1,21 +1,22 @@
 import QtQuick
+import QtQuick.Controls
 import "BoardLogic.js" as BoardLogic
 
 Item {
   id: board
-  property int rows: 10
-  property int cols: 10
-  property int bombs: 15
+  property int rows: 0
+  property int cols: 0
+  property int bombs: 0
   property var grid: []
-
   property alias repeater: repeater
 
-  implicitWidth: gameGrid.implicitWidth
-  implicitHeight: gameGrid.implicitHeight
-
   function revealCell(r, c) {
-    BoardLogic.revealCell(board, r, c, grid, rows, cols, BoardLogic.revealAll,
-                          BoardLogic.checkWin)
+    if (grid[r] && grid[r][c]) {
+      BoardLogic.revealCell(board, r, c, grid, rows, cols,
+                            BoardLogic.revealAll, BoardLogic.checkWin)
+    } else {
+      console.warn(`Tried to reveal invalid cell at (${r}, ${c})`)
+    }
   }
 
   Grid {
@@ -26,10 +27,11 @@ Item {
 
     Repeater {
       id: repeater
-      model: board.rows * board.cols
+      model: rows * cols
+
       delegate: Cell {
-        row: index / board.cols
-        col: index % board.cols
+        row: Math.floor(index / cols)
+        col: index % cols
 
         onClicked: {
           if (!isRevealed && !isFlagged) {
@@ -37,13 +39,6 @@ Item {
           }
         }
       }
-    }
-
-    Component.onCompleted: {
-      Qt.callLater(() => {
-                     BoardLogic.initGame(board, rows, cols, bombs,
-                                         grid, repeater)
-                   })
     }
   }
 }
