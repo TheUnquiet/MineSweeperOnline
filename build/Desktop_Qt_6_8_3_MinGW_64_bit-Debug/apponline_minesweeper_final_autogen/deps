@@ -8,6 +8,8 @@ apponline_minesweeper_final_autogen/timestamp: \
 	C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/moc_predefs.h \
 	C:/All-1/Apps/qml/online_minesweeper_final/gameBuilder.cpp \
 	C:/All-1/Apps/qml/online_minesweeper_final/gameBuilder.h \
+	C:/All-1/Apps/qml/online_minesweeper_final/gameServerMessageTypes.cpp \
+	C:/All-1/Apps/qml/online_minesweeper_final/gameServerMessageTypes.h \
 	C:/All-1/Apps/qml/online_minesweeper_final/main.cpp \
 	C:/All-1/Apps/qml/online_minesweeper_final/webSocketServer.h \
 	C:/All-1/Apps/qml/online_minesweeper_final/websocketserver.cpp \

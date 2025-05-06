@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 10,
-                        "durationMicroseconds": 1044,
+                        "durationMicroseconds": 642,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 11
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 11,
-                        "durationMicroseconds": 361,
+                        "durationMicroseconds": 261,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 12
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 15

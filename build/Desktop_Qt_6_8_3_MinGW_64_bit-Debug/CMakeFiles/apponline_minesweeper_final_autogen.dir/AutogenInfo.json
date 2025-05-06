@@ -858,6 +858,12 @@
 			null
 		],
 		[
+			"C:/All-1/Apps/qml/online_minesweeper_final/gameServerMessageTypes.h",
+			"MU",
+			"EWIEGA46WW/moc_gameServerMessageTypes.cpp",
+			null
+		],
+		[
 			"C:/All-1/Apps/qml/online_minesweeper_final/webSocketServer.h",
 			"MU",
 			"EWIEGA46WW/moc_webSocketServer.cpp",
@@ -972,6 +978,11 @@
 	[
 		[
 			"C:/All-1/Apps/qml/online_minesweeper_final/gameBuilder.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/All-1/Apps/qml/online_minesweeper_final/gameServerMessageTypes.cpp",
 			"MU",
 			null
 		],

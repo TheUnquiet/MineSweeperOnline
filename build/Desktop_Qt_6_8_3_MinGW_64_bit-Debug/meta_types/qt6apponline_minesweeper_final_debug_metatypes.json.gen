@@ -20,6 +20,24 @@
     {
         "classes": [
             {
+                "className": "GameServerMessageTypes",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "GameServerMessageTypes",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "gameServerMessageTypes.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
                 "className": "WebSocketServer",
                 "lineNumber": 21,
                 "object": true,

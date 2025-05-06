@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 423,
+                        "durationMicroseconds": 1015,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 7
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 13,
-                        "durationMicroseconds": 195,
+                        "durationMicroseconds": 274,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 8
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 98,
+                        "durationMicroseconds": 111,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "grid",
                         "line": 13
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 195,
+                        "durationMicroseconds": 79,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "bombList",
                         "line": 15
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 60,
+                        "durationMicroseconds": 48,
                         "errorMessage": "Cannot access value for name ready",
                         "functionName": "active",
                         "line": 20
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 105,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "sourceComponent",
                         "line": 21
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 67,
+                        "durationMicroseconds": 72,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 19
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 26,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Cannot access value for name boardPage",
                         "functionName": "rows",
                         "line": 28
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 17,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Cannot access value for name boardPage",
                         "functionName": "cols",
                         "line": 29
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 17,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name boardPage",
                         "functionName": "bombs",
                         "line": 30
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 15,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Cannot access value for name boardPage",
                         "functionName": "grid",
                         "line": 31
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 633,
+                        "durationMicroseconds": 359,
                         "errorMessage": "Cannot generate efficient code for LoadClosure",
                         "functionName": "onCompleted",
                         "line": 33

@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 249,
+                        "durationMicroseconds": 294,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "grid",
                         "line": 10
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 11,
-                        "durationMicroseconds": 135,
+                        "durationMicroseconds": 184,
                         "errorMessage": "",
                         "functionName": "rows",
                         "line": 24
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 14,
-                        "durationMicroseconds": 73,
+                        "durationMicroseconds": 108,
                         "errorMessage": "",
                         "functionName": "columns",
                         "line": 25
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 14,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 50,
                         "errorMessage": "Cannot access value for name rows",
                         "functionName": "model",
                         "line": 30
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 14,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "row",
                         "line": 33
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 14,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "col",
                         "line": 34
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 107,
                         "errorMessage": "Cannot access value for name board",
                         "functionName": "onClicked",
                         "line": 36

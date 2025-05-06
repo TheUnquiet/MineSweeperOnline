@@ -1,0 +1,196 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5da04c0df850f76b901.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "online_minesweeper_final",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-d294da93036575c8c37e.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-857642aabdddcb7551ed.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-38727c741f800034a7a1.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-724e95868d76a91acfc8.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-61ee5ce2dbf8284277d7.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final-Debug-d55f268afb975b3cb60c.json",
+					"name" : "apponline_minesweeper_final",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_autogen-Debug-6a2469a8c18eb8f8e553.json",
+					"name" : "apponline_minesweeper_final_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_autogen_timestamp_deps-Debug-1c66e258dafd01878ff4.json",
+					"name" : "apponline_minesweeper_final_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_copy_qml-Debug-49587c40b9f5195249c2.json",
+					"name" : "apponline_minesweeper_final_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_copy_res-Debug-7cbe1a01ed2276b82520.json",
+					"name" : "apponline_minesweeper_final_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_qmlimportscan-Debug-9dc77b111c06bfae111f.json",
+					"name" : "apponline_minesweeper_final_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_qmllint-Debug-24e69c2d0b3a03c630dc.json",
+					"name" : "apponline_minesweeper_final_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_qmllint_json-Debug-df2146ccf4ef166e1707.json",
+					"name" : "apponline_minesweeper_final_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_qmllint_module-Debug-328fda432bdad2ba3062.json",
+					"name" : "apponline_minesweeper_final_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apponline_minesweeper_final_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apponline_minesweeper_final_qmltyperegistration-Debug-43dc6d07b1a4e110b801.json",
+					"name" : "apponline_minesweeper_final_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_apponline_minesweeper_final_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_apponline_minesweeper_final_aotstats_target-Debug-8dbb3cf7164a5f2d80ac.json",
+					"name" : "module_apponline_minesweeper_final_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug",
+		"source" : "C:/All-1/Apps/qml/online_minesweeper_final"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

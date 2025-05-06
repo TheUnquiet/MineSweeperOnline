@@ -1,5 +1,6 @@
 #include "webSocketServer.h"
 #include "gameBuilder.h"
+#include "gameServerMessageTypes.h"
 #include <QDebug>
 #include <QJsonObject>
 #include <QJsonArray>
@@ -36,7 +37,7 @@ void WebSocketServer::onMessageRecieved(const QString &message) {
 
     QString type = obj["type"].toString();
 
-    if (type == "createSession") {
+    if (type == GameServerMessageTypes::CreateSession) {
         GameSession session;
         session.id = nextSessionId++;
         session.rows = obj["rows"].toInt();
@@ -53,7 +54,7 @@ void WebSocketServer::onMessageRecieved(const QString &message) {
         qobject_cast<QWebSocket*>(sender())->sendTextMessage(responseDoc.toJson());
 
         session.players.append(qobject_cast<QWebSocket*>(sender()));
-    } else if (type == "getSessions") {
+    } else if (type == GameServerMessageTypes::GetSessions) {
         QJsonArray sessionList;
 
         for (const GameSession &session : std::as_const(sessions)) {
@@ -76,7 +77,7 @@ void WebSocketServer::onMessageRecieved(const QString &message) {
         QJsonDocument responseDoc(response);
         qobject_cast<QWebSocket*>(sender())->sendTextMessage(responseDoc.toJson());
 
-    } else if (type == "joinSession") {
+    } else if (type == GameServerMessageTypes::JoinSession) {
         int sessionId = obj["sessionId"].toInt();
         QWebSocket *client = qobject_cast<QWebSocket*>(sender());
 
@@ -87,12 +88,11 @@ void WebSocketServer::onMessageRecieved(const QString &message) {
                 if (session.isFull()) {
                     startGameForSession(session);
                 } else {
-                    // Notify client that they joined, but game hasn't started yet
+                    // Game not started
                     QJsonObject joinedMsg;
                     joinedMsg["type"] = "sessionJoined";
                     joinedMsg["sessionId"] = session.id;
 
-                    // Optional: include session info if needed on client side
                     joinedMsg["rows"] = session.rows;
                     joinedMsg["cols"] = session.cols;
                     joinedMsg["bombs"] = session.bombs;
