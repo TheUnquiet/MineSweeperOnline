@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 331,
+                        "durationMicroseconds": 285,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "sessionList",
                         "line": 7
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 179,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 10
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 52,
+                        "durationMicroseconds": 421,
                         "errorMessage": "Cannot access value for name sessionList",
                         "functionName": "model",
                         "line": 14
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 458,
+                        "durationMicroseconds": 946,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 19

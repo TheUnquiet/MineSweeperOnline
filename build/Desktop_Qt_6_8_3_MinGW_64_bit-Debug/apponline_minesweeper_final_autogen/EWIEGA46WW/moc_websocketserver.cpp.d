@@ -1,5 +1,7 @@
 C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/EWIEGA46WW/moc_webSocketServer.cpp: C:/All-1/Apps/qml/online_minesweeper_final/webSocketServer.h \
   C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/apponline_minesweeper_final_autogen/moc_predefs.h \
+  C:/All-1/Apps/qml/online_minesweeper_final/gameSession.h \
+  C:/All-1/Apps/qml/online_minesweeper_final/sessionManager.h \
   C:/Qt/6.8.3/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.8.3/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.3/mingw_64/include/QtCore/QSharedDataPointer \
@@ -148,6 +150,7 @@ C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-D
   C:/Qt/6.8.3/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/Qt/6.8.3/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.8.3/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/Qt/6.8.3/mingw_64/include/QtWebSockets/QWebSocket \
   C:/Qt/6.8.3/mingw_64/include/QtWebSockets/QWebSocketServer \
   C:/Qt/6.8.3/mingw_64/include/QtWebSockets/QwebSocket \
   C:/Qt/6.8.3/mingw_64/include/QtWebSockets/qtwebsocketsexports.h \

@@ -1,17 +1,14 @@
 #ifndef GAMESERVERMESSAGETYPES_H
 #define GAMESERVERMESSAGETYPES_H
 
-#include <QObject>
+#include <QString>
 
-class GameServerMessageTypes : public QObject {
-    Q_OBJECT
+class GameServerMessageTypes
+{
 public:
     static QString CreateSession;
     static QString GetSessions;
     static QString JoinSession;
-
-private:
-    GameServerMessageTypes();
 };
 
 #endif // GAMESERVERMESSAGETYPES_H

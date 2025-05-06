@@ -864,6 +864,24 @@
 			null
 		],
 		[
+			"C:/All-1/Apps/qml/online_minesweeper_final/gameSession.h",
+			"MU",
+			"EWIEGA46WW/moc_gameSession.cpp",
+			null
+		],
+		[
+			"C:/All-1/Apps/qml/online_minesweeper_final/messageFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_messageFactory.cpp",
+			null
+		],
+		[
+			"C:/All-1/Apps/qml/online_minesweeper_final/sessionManager.h",
+			"MU",
+			"EWIEGA46WW/moc_sessionManager.cpp",
+			null
+		],
+		[
 			"C:/All-1/Apps/qml/online_minesweeper_final/webSocketServer.h",
 			"MU",
 			"EWIEGA46WW/moc_webSocketServer.cpp",
@@ -987,6 +1005,16 @@
 			null
 		],
 		[ "C:/All-1/Apps/qml/online_minesweeper_final/main.cpp", "MU", null ],
+		[
+			"C:/All-1/Apps/qml/online_minesweeper_final/messageFactory.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/All-1/Apps/qml/online_minesweeper_final/sessionManager.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/All-1/Apps/qml/online_minesweeper_final/websocketserver.cpp",
 			"MU",

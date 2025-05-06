@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "MessageFactory",
+            "lineNumber": 10,
+            "object": true,
+            "qualifiedClassName": "MessageFactory",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "messageFactory.h",
+    "outputRevision": 68
+}

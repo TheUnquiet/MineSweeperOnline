@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "WebSocketServer",
-            "lineNumber": 21,
+            "lineNumber": 11,
             "object": true,
             "qualifiedClassName": "WebSocketServer",
             "signals": [
@@ -40,39 +40,13 @@
                 },
                 {
                     "access": "private",
-                    "index": 4,
-                    "name": "broadcastClientCount",
-                    "returnType": "void"
-                },
-                {
-                    "access": "private",
-                    "arguments": [
-                        {
-                            "name": "rows",
-                            "type": "int"
-                        },
-                        {
-                            "name": "cols",
-                            "type": "int"
-                        },
-                        {
-                            "name": "bombs",
-                            "type": "int"
-                        }
-                    ],
-                    "index": 5,
-                    "name": "startNewGame",
-                    "returnType": "void"
-                },
-                {
-                    "access": "private",
                     "arguments": [
                         {
                             "name": "session",
                             "type": "GameSession"
                         }
                     ],
-                    "index": 6,
+                    "index": 4,
                     "name": "startGameForSession",
                     "returnType": "void"
                 }
