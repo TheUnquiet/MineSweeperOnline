@@ -8,7 +8,6 @@ ApplicationWindow {
   height: 600
   title: "Minesweeper Final"
 
-  property var sessions: []
   property int connectedClients: 0
 
   WebSocket {
@@ -20,29 +19,28 @@ ApplicationWindow {
       console.log("Received: " + message)
       var data = JSON.parse(message)
 
-      if (data.type === "clientCount") {
+      switch (data.type) {
+      case "clientCount":
         connectedClients = data.count
-      } else if (data.type === "sessionList") {
-        sessions = data.sessions
-      } else if (data.type === "newGame" || (data.type === "sessionJoined"
-                                             && data.bombs !== undefined)) {
-        var boardPageInstance = boardPageComponent.createObject(stackView)
-        boardPageInstance.rows = data.rows
-        boardPageInstance.cols = data.cols
-        boardPageInstance.bombs = data.bombs.length
-            || data.bombs // handle both array and int
-        boardPageInstance.bombList = data.bombs
-        boardPageInstance.ready = true
-        stackView.push(boardPageInstance)
-
-        if (data.type === "newGame") {
-          console.log("New game started")
-        } else {
-          console.log("Joined session after game started")
-        }
-      } else if (data.type === "sessionJoined") {
+        break
+      case "sessionList":
+        var joinPageInstance = joinPageComponent.createObject(stackView, {
+                                                                "sessionList": data.sessions,
+                                                                "socket": webSocket
+                                                              })
+        stackView.push(joinPageInstance)
+        break
+      case "newGame":
+        console.log("New game started")
+        stackView.currentItem.currentGame = data
+        break
+      case "sessionJoined":
         console.log("Joined session, waiting for more players...")
-        // Optionally show waiting UI
+        var boardPageInstance = boardPageComponent.createObject(stackView, {
+                                                                  "game": data
+                                                                })
+        stackView.push(boardPageInstance)
+        break
       }
     }
   }
@@ -57,7 +55,6 @@ ApplicationWindow {
         webSocket.sendTextMessage(JSON.stringify({
                                                    "type": "getSessions"
                                                  }))
-        stackView.push(joinPageComponent)
       }
     }
   }
@@ -73,8 +70,6 @@ ApplicationWindow {
   Component {
     id: joinPageComponent
     JoinSessionPage {
-      socket: webSocket
-      sessionList: sessions
       onBack: stackView.pop()
     }
   }

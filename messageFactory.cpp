@@ -4,30 +4,29 @@ QString MessageFactory::sessionCreated(int id) {
     QJsonObject obj;
     obj["type"] = "sessionCreated";
     obj["sessionId"] = id;
-    return QJsonDocument(obj).toJson(QJsonDocument::Compact);
+    return toJson(obj);
 }
 
-QString MessageFactory::sessionJoined(const GameSession& session) {
+QString MessageFactory::sessionJoined(GameSession* session) {
     QJsonObject obj;
     obj["type"] = "sessionJoined";
-    obj["sessionId"] = session.id;
-    obj["rows"] = session.rows;
-    obj["cols"] = session.cols;
-    obj["bombs"] = session.bombs;
+    obj["sessionId"] = session->id;
+    obj["rows"] = session->rows;
+    obj["cols"] = session->cols;
+    obj["bombs"] = session->bombs;
+    obj["gameType"] = "MineSweeper";
 
-    return QJsonDocument(obj).toJson(QJsonDocument::Compact);
+    return toJson(obj);
 }
 
-QString MessageFactory::sessionList(const QList<GameSession>& sessions) {
+QString MessageFactory::sessionList(const QList<GameSession*>& sessions) {
     QJsonArray array;
-    for (const GameSession& s : sessions) {
+    for (auto s : sessions) {
         QJsonObject o;
-        o["id"] = s.id;
-        o["rows"] = s.rows;
-        o["cols"] = s.cols;
-        o["bombs"] = s.bombs;
-        o["playersJoined"] = s.players.size();
-        o["maxPlayers"] = s.maxPlayers;
+        o["id"] = s->id;
+        o["gameType"] = "MineSweeper";
+        o["playersJoined"] = s->players.size(); // level deeper
+        o["maxPlayers"] = s->maxPlayers;
         array.append(o);
     }
 
@@ -35,10 +34,10 @@ QString MessageFactory::sessionList(const QList<GameSession>& sessions) {
     obj["type"] = "sessionList";
     obj["sessions"] = array;
 
-    return QJsonDocument(obj).toJson(QJsonDocument::Compact);
+    return toJson(obj);
 }
 
-QString MessageFactory::newGame(const GameSession& session, const QVector<QPair<int, int>>& bombs) {
+QString MessageFactory::newGame(GameSession* session, const QVector<QPair<int, int>>& bombs) {
     QJsonArray bombArray;
     for (const auto& pair : bombs) {
         QJsonObject bomb;
@@ -49,9 +48,18 @@ QString MessageFactory::newGame(const GameSession& session, const QVector<QPair<
 
     QJsonObject obj;
     obj["type"] = "newGame";
-    obj["rows"] = session.rows;
-    obj["cols"] = session.cols;
+    obj["rows"] = session->rows;
+    obj["cols"] = session->cols;
     obj["bombs"] = bombArray;
 
-    return QJsonDocument(obj).toJson(QJsonDocument::Compact);
+    return toJson(obj);
 }
+
+
+
+
+
+
+
+
+

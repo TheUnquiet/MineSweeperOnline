@@ -49,23 +49,27 @@ function revealAll(grid, rows, cols) {
   }
 }
 
-function initGameFromServer(board, rows, cols, bombList, grid, repeater) {
+function initGameFromServer(rows, cols, grid, repeater) {
   for (var r = 0; r < rows; r++) {
     grid[r] = []
     for (var c = 0; c < cols; c++) {
       let cell = repeater.itemAt(r * cols + c)
-      cell.isBomb = false
-      cell.isFlagged = false
-      cell.isRevealed = false
-      cell.neighborBombs = 0
       grid[r][c] = cell
     }
   }
-
+}
+function setUpGameFromServer(rows, cols, grid, bombList) {
+  grid.forEach(row => row.forEach(cell => {
+                                    cell.isBomb = false
+                                    cell.isFlagged = false
+                                    cell.isRevealed = false
+                                    cell.neighborBombs = 0
+                                  }))
   for (var i = 0; i < bombList.length; i++) {
     let x = bombList[i].x
     let y = bombList[i].y
     grid[y][x].isBomb = true
+    console.log(grid[y][x].isBomb)
   }
 
   for (var r = 0; r < rows; r++) {

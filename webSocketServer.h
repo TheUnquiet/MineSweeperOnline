@@ -19,7 +19,7 @@ private slots:
     void onNewConnection();
     void onMessageRecieved(const QString &message);
     void onClientDisconnect();
-    void startGameForSession(const GameSession &session);
+    void startGameForSession(GameSession* session);
 
 private:
     QWebSocketServer *server;

@@ -1,0 +1,108 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 288,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "grid",
+                        "line": 9
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 94,
+                        "errorMessage": "",
+                        "functionName": "game",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "currentGame",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 18,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "Cannot load property rows from (component in C:/All-1/Apps/qml/online_minesweeper_final/MineSweeperBoard.qml)::game with type QVariant.",
+                        "functionName": "onGameChanged",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 25,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot load property rows from (component in C:/All-1/Apps/qml/online_minesweeper_final/MineSweeperBoard.qml)::currentGame with type QVariant.",
+                        "functionName": "onCurrentGameChanged",
+                        "line": 28
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 3,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "revealCell",
+                        "line": 37
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 11,
+                        "durationMicroseconds": 149,
+                        "errorMessage": "",
+                        "functionName": "rows",
+                        "line": 48
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 14,
+                        "durationMicroseconds": 92,
+                        "errorMessage": "",
+                        "functionName": "columns",
+                        "line": 49
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 14,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "Cannot access value for name rows",
+                        "functionName": "model",
+                        "line": 54
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 14,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "row",
+                        "line": 57
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 14,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "col",
+                        "line": 58
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "Cannot access value for name board",
+                        "functionName": "onClicked",
+                        "line": 60
+                    }
+                ],
+                "filepath": "C:/All-1/Apps/qml/online_minesweeper_final/MineSweeperBoard.qml"
+            }
+        ],
+        "moduleId": "online_minesweeper_final(apponline_minesweeper_final)"
+    }
+]

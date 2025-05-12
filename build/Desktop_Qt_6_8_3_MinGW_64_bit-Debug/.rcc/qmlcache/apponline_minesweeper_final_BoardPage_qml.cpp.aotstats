@@ -5,99 +5,131 @@
                 "entries": [
                     {
                         "codegenSuccessfull": true,
-                        "column": 12,
-                        "durationMicroseconds": 970,
+                        "column": 24,
+                        "durationMicroseconds": 289,
                         "errorMessage": "",
-                        "functionName": "width",
-                        "line": 7
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 13,
-                        "durationMicroseconds": 205,
-                        "errorMessage": "",
-                        "functionName": "height",
+                        "functionName": "game",
                         "line": 8
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 24,
-                        "durationMicroseconds": 85,
-                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
-                        "functionName": "grid",
-                        "line": 13
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 28,
-                        "durationMicroseconds": 63,
-                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
-                        "functionName": "bombList",
-                        "line": 15
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 17,
-                        "durationMicroseconds": 41,
-                        "errorMessage": "Cannot access value for name ready",
-                        "functionName": "active",
-                        "line": 20
-                    },
-                    {
                         "codegenSuccessfull": true,
-                        "column": 26,
-                        "durationMicroseconds": 68,
+                        "column": 31,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
-                        "functionName": "sourceComponent",
-                        "line": 21
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 57,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 19
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 19,
-                        "durationMicroseconds": 25,
-                        "errorMessage": "Cannot access value for name boardPage",
-                        "functionName": "rows",
-                        "line": 28
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 19,
-                        "durationMicroseconds": 16,
-                        "errorMessage": "Cannot access value for name boardPage",
-                        "functionName": "cols",
-                        "line": 29
+                        "functionName": "currentGame",
+                        "line": 10
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 17,
-                        "errorMessage": "Cannot access value for name boardPage",
-                        "functionName": "bombs",
+                        "durationMicroseconds": 86,
+                        "errorMessage": "Cannot load property gameType from (component in C:/All-1/Apps/qml/online_minesweeper_final/BoardPage.qml)::game with type QVariant.",
+                        "functionName": "onGameChanged",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 129,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "Cannot load property running from QQuickLoader::item with type QObject.",
+                        "functionName": "value",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 330,
+                        "errorMessage": "",
+                        "functionName": "when",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 112,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 28
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 113,
+                        "errorMessage": "",
+                        "functionName": "value",
                         "line": 30
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 16,
-                        "errorMessage": "Cannot access value for name boardPage",
-                        "functionName": "grid",
+                        "durationMicroseconds": 200,
+                        "errorMessage": "",
+                        "functionName": "when",
                         "line": 31
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 36,
-                        "durationMicroseconds": 205,
-                        "errorMessage": "Cannot generate efficient code for LoadClosure",
-                        "functionName": "onCompleted",
-                        "line": 33
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 35
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 196,
+                        "errorMessage": "",
+                        "functionName": "value",
+                        "line": 37
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 1210,
+                        "errorMessage": "",
+                        "functionName": "when",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 18,
+                        "durationMicroseconds": 212,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 43
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 86,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 47
                     }
                 ],
                 "filepath": "C:/All-1/Apps/qml/online_minesweeper_final/BoardPage.qml"

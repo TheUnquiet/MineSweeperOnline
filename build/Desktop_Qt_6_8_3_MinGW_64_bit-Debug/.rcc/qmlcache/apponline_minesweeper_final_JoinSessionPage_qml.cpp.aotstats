@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 281,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "sessionList",
                         "line": 7
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 179,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 10
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 421,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot access value for name sessionList",
                         "functionName": "model",
                         "line": 14
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 946,
+                        "durationMicroseconds": 484,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 19
@@ -41,7 +41,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 26
+                        "line": 24
                     },
                     {
                         "codegenSuccessfull": false,
@@ -49,7 +49,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 36
+                        "line": 34
                     }
                 ],
                 "filepath": "C:/All-1/Apps/qml/online_minesweeper_final/JoinSessionPage.qml"

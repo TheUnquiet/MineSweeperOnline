@@ -36,29 +36,36 @@ void WebSocketServer::onMessageRecieved(const QString &message) {
     QJsonObject obj = QJsonDocument::fromJson(message.toUtf8()).object();
     QString type = obj["type"].toString();
     QWebSocket* client = qobject_cast<QWebSocket*>(sender());
+    // hash ( sessie->clients )
 
     if (type == GameServerMessageTypes::CreateSession) {
-        auto& session = sessionManager.createSession(obj["rows"].toInt(), obj["cols"].toInt(),
+        auto session = sessionManager.createSession(obj["rows"].toInt(), obj["cols"].toInt(),
                                                      obj["bombs"].toInt(), obj["players"].toInt(), client);
-        client->sendTextMessage(MessageFactory::sessionCreated(session.id));
+        client->sendTextMessage(MessageFactory::sessionCreated(session->id));
 
     } else if (type == GameServerMessageTypes::GetSessions) {
         client->sendTextMessage(MessageFactory::sessionList(sessionManager.getAvailableSessions()));
 
     } else if (type == GameServerMessageTypes::JoinSession) {
-        bool gameStarted = false;
-        if (sessionManager.joinSession(obj["sessionId"].toInt(), client, gameStarted)) {
-            const GameSession* session = sessionManager.getSessionById(obj["sessionId"].toInt());
-            if (gameStarted && session)
-                startGameForSession(*session);
-            else
-                client->sendTextMessage(MessageFactory::sessionJoined(*session));
+        auto session = sessionManager.getSessionById(obj["sessionId"].toInt());
+        if (!session || session->isFull()) {
+            return;
         }
+        session->players.append(client); // in GameSession
+        client->sendTextMessage(MessageFactory::sessionJoined(session));
+        if (session->isFull())  {
+            startGameForSession(session); // aan sessie zeggen start de game
+        }
+            // client->sendTextMessage(MessageFactory::toJson(session->join(obj)));
+            // session->join()
     }
 }
 
 void WebSocketServer::onClientDisconnect() {
     QWebSocket *client = qobject_cast<QWebSocket *>(sender());
+    // sessionManager.getSessionForClient(client)
+    // -> session object
+    // session->close()
     if (client) {
         clients.removeAll(client);
         client->deleteLater();
@@ -66,14 +73,26 @@ void WebSocketServer::onClientDisconnect() {
     }
 }
 
-void WebSocketServer::startGameForSession(const GameSession &session) {
-    GameBuilder builder(session.rows, session.cols, session.bombs);
+// in session
+void WebSocketServer::startGameForSession(GameSession* session) {
+
+    GameBuilder builder(session->rows, session->cols, session->bombs);
     QVector<QPair<int, int>> bombsArray = builder.generateBombs();
 
     QString message = MessageFactory::newGame(session, bombsArray);
-    for (QWebSocket *client : session.players) {
+    for (QWebSocket *client : session->players) {
         if (client && client->isValid()) {
             client->sendTextMessage(message);
         }
     }
 }
+
+
+
+
+
+
+
+
+
+

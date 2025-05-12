@@ -45,7 +45,7 @@ static constexpr auto qt_meta_stringdata_ZN15WebSocketServerE = QtMocHelpers::st
     "message",
     "onClientDisconnect",
     "startGameForSession",
-    "GameSession",
+    "GameSession*",
     "session"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -106,7 +106,7 @@ Q_CONSTINIT const QMetaObject WebSocketServer::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'startGameForSession'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const GameSession &, std::false_type>
+        QtPrivate::TypeAndForceComplete<GameSession *, std::false_type>
     >,
     nullptr
 } };
@@ -120,7 +120,7 @@ void WebSocketServer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 1: _t->onNewConnection(); break;
         case 2: _t->onMessageRecieved((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 3: _t->onClientDisconnect(); break;
-        case 4: _t->startGameForSession((*reinterpret_cast< std::add_pointer_t<GameSession>>(_a[1]))); break;
+        case 4: _t->startGameForSession((*reinterpret_cast< std::add_pointer_t<GameSession*>>(_a[1]))); break;
         default: ;
         }
     }

@@ -43,7 +43,7 @@
                     "arguments": [
                         {
                             "name": "session",
-                            "type": "GameSession"
+                            "type": "GameSession*"
                         }
                     ],
                     "index": 4,

@@ -68,6 +68,13 @@ namespace _qt_qml_online_minesweeper_final_BoardPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_online_minesweeper_final_MineSweeperBoard_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -91,6 +98,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/online_minesweeper_final/StartSessionPage.qml"), &QmlCacheGeneratedCode::_qt_qml_online_minesweeper_final_StartSessionPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/online_minesweeper_final/JoinSessionPage.qml"), &QmlCacheGeneratedCode::_qt_qml_online_minesweeper_final_JoinSessionPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/online_minesweeper_final/BoardPage.qml"), &QmlCacheGeneratedCode::_qt_qml_online_minesweeper_final_BoardPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/online_minesweeper_final/MineSweeperBoard.qml"), &QmlCacheGeneratedCode::_qt_qml_online_minesweeper_final_MineSweeperBoard_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

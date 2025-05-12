@@ -12,9 +12,13 @@ class MessageFactory : public QObject
     Q_OBJECT
 public:
     static QString sessionCreated(int id);
-    static QString sessionList(const QList<GameSession>& sessions);
-    static QString sessionJoined(const GameSession& session);
-    static QString newGame(const GameSession& session, const QVector<QPair<int, int>>& bombs);
+    static QString sessionList(const QList<GameSession*>& sessions);
+    static QString sessionJoined(GameSession* session);
+    static QString newGame(GameSession* session, const QVector<QPair<int, int>>& bombs);
+
+    inline static QString toJson(const QJsonObject &obj) {
+        return QJsonDocument(obj).toJson(QJsonDocument::Compact);
+    }
 };
 
 #endif // MESSAGEFACTORY_H

@@ -10,6 +10,8 @@ struct GameSession {
     int bombs;
     int maxPlayers;
     QList<QWebSocket*> players;
+    // Type
+    // HASH
 
     GameSession() = default;
 

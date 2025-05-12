@@ -9,6 +9,7 @@
     <file alias="StartSessionPage.qml">C:/All-1/Apps/qml/online_minesweeper_final/StartSessionPage.qml</file>
     <file alias="JoinSessionPage.qml">C:/All-1/Apps/qml/online_minesweeper_final/JoinSessionPage.qml</file>
     <file alias="BoardPage.qml">C:/All-1/Apps/qml/online_minesweeper_final/BoardPage.qml</file>
+    <file alias="MineSweeperBoard.qml">C:/All-1/Apps/qml/online_minesweeper_final/MineSweeperBoard.qml</file>
   </qresource>
 </RCC>
 

@@ -4,39 +4,47 @@ import "BoardLogic.js" as BoardLogic
 
 Item {
     id: boardPage
-    width: parent ? parent.width : 600
-    height: parent ? parent.height : 600
 
-    property int rows: 0
-    property int cols: 0
-    property int bombs: 0
-    property var grid: []
-    property bool ready: false
-    property var bombList: []
+    property var game: ({})
+    property bool running: false
+    property var currentGame: ({})
+
+    onGameChanged: {
+        boardLoader.source = `${game.gameType}Board.qml`
+    }
 
     Loader {
         id: boardLoader
         anchors.fill: parent
-        active: ready
-        sourceComponent: boardComponent
+        // sync vars
+        Binding {
+            target: boardPage
+            property: "running"
+            value: boardLoader.item.running
+            when: boardLoader.status === Loader.Ready
+        }
+
+        Binding {
+            target: boardLoader.item
+            property: "game"
+            value: boardPage.game
+            when: boardLoader.status === Loader.Ready
+        }
+
+        Binding {
+            target: boardLoader.item
+            property: "currentGame"
+            value: boardPage.currentGame
+            when: boardLoader.status === Loader.Ready
+        }
     }
 
-    Component {
-        id: boardComponent
-        Board {
-            id: board
-            rows: boardPage.rows
-            cols: boardPage.cols
-            bombs: boardPage.bombs
-            grid: boardPage.grid
-
-            Component.onCompleted: {
-                Qt.callLater(() => {
-                                 BoardLogic.initGameFromServer(
-                                     board, rows, cols, boardPage.bombList,
-                                     boardPage.grid, board.repeater)
-                             })
-            }
+    Rectangle {
+        anchors.fill: parent
+        color: "#AA000000"
+        visible: !boardPage.running
+        MouseArea {
+            anchors.fill: parent
         }
     }
 }

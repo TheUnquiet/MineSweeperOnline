@@ -16,9 +16,7 @@ Item {
                 spacing: 10
 
                 Text {
-                    text: "Session " + modelData.id + ": " + modelData.playersJoined + "/"
-                          + modelData.maxPlayers + " (" + modelData.rows + "x"
-                          + modelData.cols + ", " + modelData.bombs + " bombs)"
+                    text: `Session: ${modelData.gameType} ${modelData.id} : ${modelData.playersJoined}/${modelData.maxPlayers}`
                 }
 
                 Button {

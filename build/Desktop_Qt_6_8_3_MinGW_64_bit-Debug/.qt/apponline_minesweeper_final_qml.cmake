@@ -20,6 +20,8 @@ set(src_and_dest_list
     "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/JoinSessionPage.qml"
     "C:/All-1/Apps/qml/online_minesweeper_final/BoardPage.qml"
     "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/BoardPage.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/MineSweeperBoard.qml"
+    "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/online_minesweeper_final/MineSweeperBoard.qml"
 
 )
 set(timestamp_file "C:/All-1/Apps/qml/online_minesweeper_final/build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/.qt/apponline_minesweeper_final_qml.txt")
