@@ -432,47 +432,6 @@
 				"parent" : 64
 			},
 			{
-				"file" : 1,
-				"line" : -1,
-				"parent" : 0
-			},
-			{
-				"command" : 20,
-				"file" : 23,
-				"line" : 1,
-				"parent" : 66
-			},
-			{
-				"command" : 19,
-				"file" : 0,
-				"line" : 823,
-				"parent" : 67
-			},
-			{
-				"command" : 18,
-				"file" : 0,
-				"line" : 745,
-				"parent" : 68
-			},
-			{
-				"command" : 17,
-				"file" : 0,
-				"line" : 745,
-				"parent" : 69
-			},
-			{
-				"command" : 16,
-				"file" : 10,
-				"line" : 4361,
-				"parent" : 70
-			},
-			{
-				"command" : 13,
-				"file" : 10,
-				"line" : 4136,
-				"parent" : 71
-			},
-			{
 				"command" : 14,
 				"file" : 10,
 				"line" : 3482,
@@ -482,6 +441,47 @@
 				"command" : 13,
 				"file" : 10,
 				"line" : 2887,
+				"parent" : 66
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 20,
+				"file" : 23,
+				"line" : 1,
+				"parent" : 68
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 823,
+				"parent" : 69
+			},
+			{
+				"command" : 18,
+				"file" : 0,
+				"line" : 745,
+				"parent" : 70
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 745,
+				"parent" : 71
+			},
+			{
+				"command" : 16,
+				"file" : 10,
+				"line" : 4361,
+				"parent" : 72
+			},
+			{
+				"command" : 13,
+				"file" : 10,
+				"line" : 4136,
 				"parent" : 73
 			},
 			{
@@ -716,7 +716,7 @@
 				"command" : 30,
 				"file" : 0,
 				"line" : 817,
-				"parent" : 67
+				"parent" : 69
 			},
 			{
 				"command" : 23,
@@ -923,7 +923,7 @@
 				15,
 				17,
 				19,
-				21,
+				20,
 				22,
 				24,
 				26,
@@ -933,8 +933,7 @@
 				34,
 				36,
 				38,
-				40,
-				41
+				39
 			]
 		},
 		{
@@ -1137,12 +1136,12 @@
 			"id" : "apponline_minesweeper_final_copy_res::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 72,
-			"id" : "apponline_minesweeper_final_qmlimportscan::@6890427a1f51a3e7e1df"
+			"backtrace" : 67,
+			"id" : "apponline_minesweeper_final_copy_qml::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 74,
-			"id" : "apponline_minesweeper_final_copy_qml::@6890427a1f51a3e7e1df"
+			"id" : "apponline_minesweeper_final_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
@@ -1305,7 +1304,9 @@
 			"sourceIndexes" : 
 			[
 				0,
-				45,
+				43,
+				61,
+				62,
 				63,
 				64,
 				65,
@@ -1313,9 +1314,7 @@
 				67,
 				68,
 				69,
-				70,
-				71,
-				72
+				70
 			]
 		},
 		{
@@ -1332,7 +1331,7 @@
 				15,
 				17,
 				19,
-				21,
+				20,
 				22,
 				24,
 				26,
@@ -1342,8 +1341,7 @@
 				34,
 				36,
 				38,
-				40,
-				41
+				39
 			]
 		},
 		{
@@ -1351,7 +1349,8 @@
 			"sourceIndexes" : 
 			[
 				2,
-				20,
+				18,
+				21,
 				23,
 				25,
 				27,
@@ -1360,8 +1359,7 @@
 				33,
 				35,
 				37,
-				39,
-				43
+				41
 			]
 		},
 		{
@@ -1374,22 +1372,23 @@
 				11,
 				12,
 				14,
-				16,
-				18
+				16
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				42,
-				44
+				40,
+				42
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
+				44,
+				45,
 				46,
 				47,
 				48,
@@ -1404,9 +1403,7 @@
 				57,
 				58,
 				59,
-				60,
-				61,
-				62
+				60
 			]
 		}
 	],
@@ -1514,17 +1511,6 @@
 			"backtrace" : 86,
 			"compileGroupIndex" : 0,
 			"path" : "lina.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 86,
-			"path" : "test.h",
-			"sourceGroupIndex" : 3
-		},
-		{
-			"backtrace" : 86,
-			"compileGroupIndex" : 0,
-			"path" : "test.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{

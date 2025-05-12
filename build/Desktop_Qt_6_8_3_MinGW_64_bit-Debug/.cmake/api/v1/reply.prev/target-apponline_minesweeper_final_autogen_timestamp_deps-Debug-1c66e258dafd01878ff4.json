@@ -71,12 +71,12 @@
 			"id" : "apponline_minesweeper_final_copy_res::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "apponline_minesweeper_final_qmlimportscan::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 7,
 			"id" : "apponline_minesweeper_final_copy_qml::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "apponline_minesweeper_final_qmlimportscan::@6890427a1f51a3e7e1df"
 		}
 	],
 	"folder" : 
